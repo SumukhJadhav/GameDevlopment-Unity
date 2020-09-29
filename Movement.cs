@@ -13,7 +13,7 @@ public class mov : MonoBehaviour
     void FixedUpdate()
     {
         //rb.AddForce(0, 0, 2000 * Time.deltaTime);
-        if(Input.GetKey("w"))
+        if(Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow))
         {
             rb.AddForce(0, 0, 2000 * Time.deltaTime);
         }
